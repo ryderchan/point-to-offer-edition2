@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class P60_TraversalOfBinaryTree {
     //前序遍历递归版
-    public static List<Integer> preorderRecursively(TreeNode node){
+    public static List<Integer> preorderRecursively(TreeNode<Integer> node){
         List<Integer> list = new ArrayList<>();
         if(node==null)
             return list;
@@ -19,7 +19,7 @@ public class P60_TraversalOfBinaryTree {
         return list;
     }
     //中序遍历递归版
-    public static List<Integer> inorderRecursively(TreeNode node){
+    public static List<Integer> inorderRecursively(TreeNode<Integer> node){
         List<Integer> list = new ArrayList<>();
         if(node==null)
             return list;
@@ -29,7 +29,7 @@ public class P60_TraversalOfBinaryTree {
         return list;
     }
     //后序遍历递归版
-    public static List<Integer> postorderRecursively(TreeNode node){
+    public static List<Integer> postorderRecursively(TreeNode<Integer> node){
         List<Integer> list = new ArrayList<>();
         if(node==null)
             return list;
@@ -39,10 +39,10 @@ public class P60_TraversalOfBinaryTree {
         return list;
     }
     //前序遍历非递归版
-    public static List<Integer> preorderIteratively(TreeNode node){
+    public static List<Integer> preorderIteratively(TreeNode<Integer> node){
         //stack栈顶元素永远为cur的父节点
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode cur = node;
+        Stack<TreeNode<Integer>> stack = new Stack<>();
+        TreeNode<Integer> cur = node;
         List<Integer> list = new LinkedList<>();
         if(node==null)
             return list;
@@ -59,10 +59,10 @@ public class P60_TraversalOfBinaryTree {
         return list;
     }
     //中序遍历非递归版
-    public static List<Integer> inorderIteratively(TreeNode node){
+    public static List<Integer> inorderIteratively(TreeNode<Integer> node){
         //stack栈顶元素永远为cur的父节点
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode cur = node;
+        Stack<TreeNode<Integer>> stack = new Stack<>();
+        TreeNode<Integer> cur = node;
         List<Integer> list = new LinkedList<>();
         while(cur!=null || !stack.isEmpty()){
             if(cur!=null){
@@ -77,12 +77,12 @@ public class P60_TraversalOfBinaryTree {
         return list;
     }
     //前序遍历非递归版
-    public static List<Integer> postorderIteratively(TreeNode node){
+    public static List<Integer> postorderIteratively(TreeNode<Integer> node){
         //stack栈顶元素永远为cur的父节点
         //prevVisted用于区分是从左子树还是右子树返回的
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode cur = node;
-        TreeNode prevVisted = null;
+        Stack<TreeNode<Integer>> stack = new Stack<>();
+        TreeNode<Integer> cur = node;
+        TreeNode<Integer> prevVisted = null;
         List<Integer> list = new LinkedList<>();
         while(cur!=null || !stack.isEmpty()){
             if(cur!=null){
@@ -106,10 +106,10 @@ public class P60_TraversalOfBinaryTree {
     }
 
     //层序遍历
-    public static List<Integer> levelorder(TreeNode node){
-        Queue<TreeNode> queue = new LinkedList<>();
+    public static List<Integer> levelorder(TreeNode<Integer> node){
+        Queue<TreeNode<Integer>> queue = new LinkedList<>();
         List<Integer> list = new LinkedList<>();
-        TreeNode temp = null;
+        TreeNode<Integer> temp = null;
         if(node==null)
             return list;
         queue.add(node);
@@ -130,9 +130,9 @@ public class P60_TraversalOfBinaryTree {
         //              /
         //             3
         //pre->123  in->132   post->321  level->123
-        TreeNode root = new TreeNode(1);
-        root.right = new TreeNode(2);
-        root.right.left = new TreeNode(3);
+        TreeNode<Integer> root = new TreeNode<Integer>(1);
+        root.right = new TreeNode<Integer>(2);
+        root.right.left = new TreeNode<Integer>(3);
         List<Integer> list_preorderRecursively = preorderRecursively(root);
         System.out.print("preorderRecursively: "+'\t');
         System.out.println(list_preorderRecursively.toString());

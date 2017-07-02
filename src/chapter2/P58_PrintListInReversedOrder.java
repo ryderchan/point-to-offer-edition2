@@ -8,7 +8,7 @@ import java.util.Stack;
  */
 public class P58_PrintListInReversedOrder {
     //递归版
-    public static void printReversinglyRecursively(ListNode node){
+    public static void printReversinglyRecursively(ListNode<Integer> node){
         if(node==null)
             return;
         else{
@@ -17,17 +17,17 @@ public class P58_PrintListInReversedOrder {
         }
     }
     //非递归版
-    public static void printReversinglyIteratively(ListNode node){
+    public static void printReversinglyIteratively(ListNode<Integer> node){
         Stack<Integer> stack = new Stack<>();
-        for(ListNode temp=node;temp!=null;temp=temp.next)
+        for(ListNode<Integer> temp=node;temp!=null;temp=temp.next)
             stack.add(temp.val);
         while(!stack.isEmpty())
             System.out.println(stack.pop());
     }
     public static void main(String[] args){
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
+        ListNode<Integer> head = new ListNode<Integer>(1);
+        head.next = new ListNode<Integer>(2);
+        head.next.next = new ListNode<Integer>(3);
         printReversinglyRecursively(head);
         System.out.println();
         printReversinglyIteratively(head);
