@@ -47,7 +47,7 @@ public class P89_StringPathInMatrix {
                 return false;
             }
         }
-            else
+        else
             return false;
     }
     public static void main(String[] args){
