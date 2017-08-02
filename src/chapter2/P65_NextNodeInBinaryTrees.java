@@ -5,19 +5,19 @@ package chapter2;
  * 二叉树的下一个节点
  * (此二叉树节点不仅有两个孩子节点指针，还包括一个父节点指针)
  */
-class TreeNode {
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode father;
-    public TreeNode(int val){
-        this.val = val;
-        this.left = null;
-        this.right = null;
-        this.father = null;
-    }
-}
 public class P65_NextNodeInBinaryTrees {
+    static class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+        public TreeNode father;
+        public TreeNode(int val){
+            this.val = val;
+            this.left = null;
+            this.right = null;
+            this.father = null;
+        }
+    }
     public static TreeNode getNext(TreeNode node){
         if(node==null)
             return null;
