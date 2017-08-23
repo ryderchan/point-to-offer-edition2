@@ -8,7 +8,7 @@ import java.util.List;
  * Created by ryder on 2017/7/18.
  * 二叉树中和为某一值的路径
  */
-public class P182_FindePath {
+public class P182_FindPath {
     //用类似于前序遍历的思路解决
     public static void findPath(TreeNode<Integer> root,int exceptedSum){
         if(root==null)
