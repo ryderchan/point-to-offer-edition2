@@ -19,11 +19,11 @@ public class P249_InversePairs {
         int mid = start+(end-start)/2;
         int left = mergeSortCore(data,start,mid);
         int right = mergeSortCore(data,mid+1,end);
-        int count = mergerSortMerge(data,start,mid,end);
+        int count = mergeSortMerge(data,start,mid,end);
         return left+right+count;
     }
     //start~mid, mid+1~end
-    public static int mergerSortMerge(int[] data,int start,int mid,int end){
+    public static int mergeSortMerge(int[] data,int start,int mid,int end){
         int[] temp = new int[end-start+1];
         for(int i=0;i<=end-start;i++)
             temp[i] = data[i+start];
@@ -44,5 +44,6 @@ public class P249_InversePairs {
     }
     public static void main(String[] args){
         System.out.println(inversePairs(new int[]{7,5,6,4}));
+        System.out.println(inversePairs(new int[]{5,6,7,8,1,2,3,4}));
     }
 }

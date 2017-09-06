@@ -13,9 +13,10 @@ public class P236_LongestSubstringWithoutDup {
     public static int longestSubstringWithoutDup(String str){
         if(str==null || str.length()==0)
             return 0;
-        //dp数组可以省略，因为只需记录前一位置的do值即可
+        //dp数组可以省略，因为只需记录前一位置的dp值即可
         int[] dp = new int[str.length()];
         dp[0] = 1;
+        int maxdp = 1;
         for(int dpIndex = 1;dpIndex<dp.length;dpIndex++){
             //i最终会停在重复字符或者-1的位置,要注意i的结束条件
             int i = dpIndex-1;
@@ -24,11 +25,14 @@ public class P236_LongestSubstringWithoutDup {
                     break;
             }
             dp[dpIndex] =  dpIndex - i;
+            if(dp[dpIndex]>maxdp)
+                maxdp = dp[dpIndex];
         }
-        return dp[dp.length-1];
+        return maxdp;
     }
     public static void main(String[] args){
         System.out.println(longestSubstringWithoutDup("arabcacfr"));
+        System.out.println(longestSubstringWithoutDup("abcdefaaa"));
 
     }
 }

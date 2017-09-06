@@ -10,7 +10,7 @@ import structure.TreeNode;
  * Description:平衡二叉树
  **/
 public class P273_isBalanced {
-    //借助于深度，判断是否是平衡二叉树
+    //借助于深度，判断是否是平衡二叉树,由于是从根到叶逐点判断，需要多次遍历树
     public static boolean isBalanced(TreeNode<Integer> node){
         if(node==null)
             return true;
@@ -28,14 +28,21 @@ public class P273_isBalanced {
         int right = treeDepth(root.right);
         return left>right?(left+1):(right+1);
     }
-    public static boolean isBalanced2(TreeNode<Integer> node,int[] depth){
+    //用后序遍历，并记录每个节点的深度，从而可以通过一次遍历完成整棵树的判断
+    public static boolean isBalanced2(TreeNode<Integer> node){
+        if(node==null)
+            return true;
+        return isBalanced2Core(node,new int[]{0});
+    }
+
+    public static boolean isBalanced2Core(TreeNode<Integer> node,int[] depth){
         if(node==null){
             depth[0] = 0;
             return true;
         }
         int[] left = new int[]{0};
         int[] right = new int[]{0};
-        if(isBalanced2(node.left,left)&&isBalanced2(node.right,right)){
+        if(isBalanced2Core(node.left,left)&&isBalanced2Core(node.right,right)){
             int diff = left[0]-right[0];
             if(diff<=1&&diff>=-1){
                 depth[0] = 1+(left[0]>right[0]?left[0]:right[0]);
@@ -55,6 +62,6 @@ public class P273_isBalanced {
         root.right = new TreeNode<>(3);
         root.right.right = new TreeNode<>(6);
         System.out.println(isBalanced(root));
-        System.out.println(isBalanced2(root,new int[]{0}));
+        System.out.println(isBalanced2(root));
     }
 }

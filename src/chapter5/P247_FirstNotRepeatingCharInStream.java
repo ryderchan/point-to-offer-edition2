@@ -27,7 +27,7 @@ public class P247_FirstNotRepeatingCharInStream {
         }
         public char find(){
             int minIndex = 256;
-            char ret = '\77';
+            char ret = '\77'; //若没有只出现一次的字符，显示\77，即？
             for(int i=0;i<256;i++){
                 if(times[i]>=0 && times[i]<minIndex) {
                     minIndex = times[i];

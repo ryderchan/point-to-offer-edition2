@@ -14,6 +14,7 @@ public class P278_NumberAppearOnce {
             return 0; //为了方便返回0，但其实并不能区分异常
         // 存储一个int(长度32bit)的每个bit的状态
         int[] bitSum = new int[32];
+        int k = 3;
         for(int i=0;i<data.length;i++){
             int indexOfBit1 = 1;
             for(int j=31;j>=0;j--){
@@ -25,12 +26,12 @@ public class P278_NumberAppearOnce {
         int result = 0;
         for(int i=0;i<32;i++){
             result<<=1; //先移位
-            result+=bitSum[i]%3;
+            result+=bitSum[i]%k;
         }
         return result;
     }
     // 一般化的问题描述：有一个数组，其中有一个元素出现了M次，其余所有元素都出现了K次，找出这个出现了M次的元素
-    // 更一般化的问题描述：一个数组，其中有一个元素出现次数大于0小于K，其余所有元素都出现了K次，找出这个出现不是K的元素
+    // 更一般化的问题描述：一个数组，其中有一个元素出现次数大于0小于K，其余所有元素都出现了K次，找出这个出现次数不是K的元素
     // 可使用电路设计相关知识解决
     // 上述的数组为int数组，但其实每一位只需要记录0,1,2这几个状态就可以了，因此可以改为bit[32][2],效果一样。
     // 此时我们令bit[i][0](-1<i<33)为int a,bit[i][1](-1<i<33)为int b,因此可以通过a，b两个整形数完成出现次数的记录。
@@ -56,7 +57,7 @@ public class P278_NumberAppearOnce {
             b = ~a&b&~c | ~a&~b&c;
             a = aTemp;
         }
-        return ~a&b;
+        return b;
     }
     public static void main(String[] args){
         int[] data1 = new int[]{10,4,5,3,5,4,3,3,4,5};

@@ -29,7 +29,7 @@ public class P227_SortArrayForMinNumber {
         }
         System.out.println();
     }
-    //if a<=b return true
+    //if a>=b return true
     public static boolean bigger(int a,int b){
         String temp1 = a+""+b;
         String temp2 = b+""+a;
