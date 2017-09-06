@@ -7,8 +7,120 @@
 ### 源代码
 github地址：https://github.com/ryderchan/point-to-offer-edition2
 
-### 各题分析
+----------------------------------------------------------------------------------------------
+### 类别顺序分析(部分题目)
 
+#####字符串
+
+页号| 题目 |简书链接
+---|------|----
+51 | 5.替换空格 | http://www.jianshu.com/p/0135b2e13f41
+124 | 19.正则表达式匹配 | http://www.jianshu.com/p/462f54c25e3f
+127 | 20.表示数字的字符串 | http://www.jianshu.com/p/477388f9693e
+284 | 58.翻转单词顺序 | http://www.jianshu.com/p/8a79f439e63d
+286 | 58.2.左旋转字符串 | http://www.jianshu.com/p/c2f062b59bda
+318 | 67.把字符串转换成整数 | http://www.jianshu.com/p/31dc58b9eca9
+
+#####栈队列
+
+页号| 题目 |简书链接
+---|------|----
+68 | 9.用两个栈实现队列 |http://www.jianshu.com/p/e92f42b892d0
+165 | 30.包含min函数的栈 | http://www.jianshu.com/p/c2f313eb26a5
+168 | 31.栈的压入弹出序列 | http://www.jianshu.com/p/e39ff6a1b3ee
+288 | 滑动窗口的最大值 | http://www.jianshu.com/p/95e4e819761b
+292 | 59.2.队列的最大值 | http://www.jianshu.com/p/13ab1c51eac6
+
+#####链表
+
+页号| 题目 |简书链接
+---|------|----
+58 | 6.从尾到头打印链表 | http://www.jianshu.com/p/ba84345d45f9
+119 | 18.o(1)时间删除链表的节点 | http://www.jianshu.com/p/5e2275757a3d
+122 | 18-2.删除排序链表中重复的节点 | http://www.jianshu.com/p/efb520176364
+134 | 22.链表中倒数第k个节点 | http://www.jianshu.com/p/0a2b3b783a54
+139 | 23.链表中环的入口(双指针总结) | http://www.jianshu.com/p/924940701642
+142 | 24.反转链表 | http://www.jianshu.com/p/81d3c9117d52
+145 | 25.合并两个排序的链表 | http://www.jianshu.com/p/0f92e9d83699
+187 | 35.复杂链表的复制 | http://www.jianshu.com/p/e6eea3a0aa43
+253 | 52.两个链表的第一个公共节点 | http://www.jianshu.com/p/aef2e3862d59
+
+#####树
+
+页号| 题目 |简书链接
+---|------|----
+60 | 总结：二叉树的遍历 | http://www.jianshu.com/p/362d4ff42ab2
+62 | 7.重建二叉树 | http://www.jianshu.com/p/ddc50561dda5
+65 | 8.二叉树的下一个节点 |http://www.jianshu.com/p/85eea9f1adf0
+148 | 26.树的子结构 | http://www.jianshu.com/p/1fab9278a947
+151 | 27.二叉树的镜像 | http://www.jianshu.com/p/055907cc3ca1
+159 | 28.对称的二叉树 | http://www.jianshu.com/p/7f1bce9c6928
+171 | 32.从上到下打印二叉树 | http://www.jianshu.com/p/962a5c053e1f
+174 | 32.2.分行从上到下打印二叉树 | http://www.jianshu.com/p/bca35632cc76
+176 | 32.3.之字形打印二叉树 | http://www.jianshu.com/p/962a5c053e1f
+179 | 33.二叉搜索树的后序遍历 | http://www.jianshu.com/p/49aaf6e0491d
+182 | 34.二叉树中和为某一值的路径 | http://www.jianshu.com/p/6c1d5cd26020
+191 | 36.二叉搜索树与双向链表 | http://www.jianshu.com/p/cbeb226afa4c
+194 | 37.序列化二叉树 | http://www.jianshu.com/p/61ec6618f792
+269 | 54.二叉搜索树的第k大节点 | http://www.jianshu.com/p/fa35d13200d9
+271 | 55.二叉树的深度 | http://www.jianshu.com/p/0411c31d0b08
+273 | 55.2.平衡二叉树 | http://www.jianshu.com/p/59db1f0e6ca9
+326 | 68.树中两个节点的最低公共祖先 | http://www.jianshu.com/p/edffe43abc14
+
+#####哈希
+
+页号| 题目 |简书链接
+---|------|----
+39 | 3.数组中重复的数 | http://www.jianshu.com/p/fb65947a2e9c
+243 | 50.第一个只出现一次的字符 | http://www.jianshu.com/p/92daf959e793
+247 | 50.2.流中第一个出现一次的字符 | http://www.jianshu.com/p/dd9826ff5109
+
+#####位运算
+
+页号| 题目 |简书链接
+---|------|----
+100 | 15.二进制中1的个数 | http://www.jianshu.com/p/33d4b952f445
+277 | 56.数组中只出现一次的两个数字 | http://www.jianshu.com/p/1a9997924cc6
+278 | 56.2.数组中唯一出现一次的数字 | http://www.jianshu.com/p/1a9997924cc6
+279 | 总结：元素出现次数的终极总结 | http://www.jianshu.com/p/896accc5bc6d
+310 | 65.不用加减乘除做加法 | http://www.jianshu.com/p/e1e77b010ecc
+312 | 不用新变量交换两个原有变量的值| http://www.jianshu.com/p/0eb31b8b1bcf
+
+#####查找
+
+页号| 题目 |简书链接
+---|------|----
+44 | 4.二维数组中的查找 | http://www.jianshu.com/p/59e6cdf999a5
+82 | 11.旋转数组的最小数字|http://www.jianshu.com/p/27b84fee0064
+263 | 53.数字在排序数组中出现的次数 | http://www.jianshu.com/p/a5bda52fe134
+266 | 53.2.0~n-1中缺失的数字 | http://www.jianshu.com/p/626f921c2091
+
+#####排序
+
+页号| 题目 |简书链接
+---|------|----
+79 | 总结：排序算法 |http://www.jianshu.com/p/6ae77d17170c
+79 | 总结：数组&链表的快排 |http://www.jianshu.com/p/bbcfb28e3242
+129 | 21.使数组中奇数位于偶数前面 | http://www.jianshu.com/p/3c332f879722
+205 | 39.数组中出现次过一半的数字 | http://www.jianshu.com/p/aba14db8cbf2
+209 | 40.最小的k个数 | http://www.jianshu.com/p/2198f276ad2a
+214 | 41.数据流中的中位数 | http://www.jianshu.com/p/cca34b891266
+227 | 45.把数组排列成最小的数 | http://www.jianshu.com/p/3cead2821c68
+249 | 51.数组中的逆序对 | http://www.jianshu.com/p/c7f98f5cc918
+
+#####动态规划
+
+页号| 题目 |简书链接
+---|------|----
+96 | 14.剪绳子(动态规划) | http://www.jianshu.com/p/63b780a3157a
+218 | 42.连续子数组的最大和 | http://www.jianshu.com/p/fa1530aafc34
+231 | 46.把数字翻译成字符串| http://www.jianshu.com/p/80e1841909b7
+233 | 47.礼物的最大值 | http://www.jianshu.com/p/489098b6c5c3
+236 | 48.最长不含重复字符的子字符串 | http://www.jianshu.com/p/b95997657aae
+
+----------------------------------------------------------------------------------------------
+### 页号顺序分析(全部题目)
+#####第2章 面试需要的基础知识
 页号| 题目 |简书链接
 ---|------|----
 25 | 1.赋值运算符函数| http://www.jianshu.com/p/3f024a03176b
@@ -29,6 +141,10 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 92 | 13.机器人的运动范围(回溯法) |http://www.jianshu.com/p/e38d425b3677
 96 | 14.剪绳子(动态规划) | http://www.jianshu.com/p/63b780a3157a
 100 | 15.二进制中1的个数(位运算) | http://www.jianshu.com/p/33d4b952f445
+
+#####第3章 高质量的代码
+页号| 题目 |简书链接
+---|------|----
 110 | 16.数值的整数次方(细节) | http://www.jianshu.com/p/83b5663a519b
 114 | 17.打印从1到最大的n位(大数问题) | http://www.jianshu.com/p/71c20c0a44b5
 119 | 18.o(1)时间删除链表的节点 | http://www.jianshu.com/p/5e2275757a3d
@@ -42,6 +158,10 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 145 | 25.合并两个排序的链表 | http://www.jianshu.com/p/0f92e9d83699
 148 | 26.树的子结构 | http://www.jianshu.com/p/1fab9278a947
 151 | 27.二叉树的镜像 | http://www.jianshu.com/p/055907cc3ca1
+
+#####第4章 解决面试题的思路
+页号| 题目 |简书链接
+---|------|----
 159 | 28.对称的二叉树 | http://www.jianshu.com/p/7f1bce9c6928
 161 | 29.顺时针打印矩阵 | http://www.jianshu.com/p/1bf321eff014
 165 | 30.包含min函数的栈 | http://www.jianshu.com/p/c2f313eb26a5
@@ -52,10 +172,14 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 179 | 33.二叉搜索树的后序遍历 | http://www.jianshu.com/p/49aaf6e0491d
 182 | 34.二叉树中和为某一值的路径 | http://www.jianshu.com/p/6c1d5cd26020
 187 | 35.复杂链表的复制 | http://www.jianshu.com/p/e6eea3a0aa43
-191 | 36.二叉搜索树与双向链 | http://www.jianshu.com/p/cbeb226afa4c
+191 | 36.二叉搜索树与双向链表 | http://www.jianshu.com/p/cbeb226afa4c
 194 | 37.序列化二叉树 | http://www.jianshu.com/p/61ec6618f792
 197 | 38.字符串的排列 | http://www.jianshu.com/p/17e7d220e8d4
 199 | 38.2字符串的组合 | http://www.jianshu.com/p/a28b8feda61b
+
+#####第5章 有花时间和空间效率
+页号| 题目 |简书链接
+---|------|----
 205 | 39.数组中出现次过一半的数字 | http://www.jianshu.com/p/aba14db8cbf2
 209 | 40.最小的k个数 | http://www.jianshu.com/p/2198f276ad2a
 214 | 41.数据流中的中位数 | http://www.jianshu.com/p/cca34b891266
@@ -71,6 +195,10 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 247 | 50.2.流中第一个出现一次的字符 | http://www.jianshu.com/p/dd9826ff5109
 249 | 51.数组中的逆序对 | http://www.jianshu.com/p/c7f98f5cc918
 253 | 52.两个链表的第一个公共节点 | http://www.jianshu.com/p/aef2e3862d59
+
+#####第6章 面试中的各项能力
+页号| 题目 |简书链接
+---|------|----
 263 | 53.数字在排序数组中出现的次数 | http://www.jianshu.com/p/a5bda52fe134
 266 | 53.2.0~n-1中缺失的数字 | http://www.jianshu.com/p/626f921c2091
 269 | 54.二叉搜索树的第k大节点 | http://www.jianshu.com/p/fa35d13200d9
@@ -93,5 +221,9 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 310 | 65.不用加减乘除做加法 | http://www.jianshu.com/p/e1e77b010ecc
 312 | 不用新变量交换两个原有变量的值| http://www.jianshu.com/p/0eb31b8b1bcf
 313 | 66.构建乘积数组 | http://www.jianshu.com/p/fa1e332f7d92
+
+#####第7章 两个面试案例
+页号| 题目 |简书链接
+---|------|----
 318 | 67.把字符串转换成整数 | http://www.jianshu.com/p/31dc58b9eca9
 326 | 68.树中两个节点的最低公共祖先 | http://www.jianshu.com/p/edffe43abc14
