@@ -122,8 +122,6 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 
 ### 页号顺序分析(全部题目)
 
-#####第2章 面试需要的基础知识
-
 页号| 题目 |简书链接
 ---|------|----
 25 | 1.赋值运算符函数| http://www.jianshu.com/p/3f024a03176b
@@ -144,10 +142,6 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 92 | 13.机器人的运动范围(回溯法) |http://www.jianshu.com/p/e38d425b3677
 96 | 14.剪绳子(动态规划) | http://www.jianshu.com/p/63b780a3157a
 100 | 15.二进制中1的个数(位运算) | http://www.jianshu.com/p/33d4b952f445
-
-#####第3章 高质量的代码
-页号| 题目 |简书链接
----|------|----
 110 | 16.数值的整数次方(细节) | http://www.jianshu.com/p/83b5663a519b
 114 | 17.打印从1到最大的n位(大数问题) | http://www.jianshu.com/p/71c20c0a44b5
 119 | 18.o(1)时间删除链表的节点 | http://www.jianshu.com/p/5e2275757a3d
@@ -161,10 +155,6 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 145 | 25.合并两个排序的链表 | http://www.jianshu.com/p/0f92e9d83699
 148 | 26.树的子结构 | http://www.jianshu.com/p/1fab9278a947
 151 | 27.二叉树的镜像 | http://www.jianshu.com/p/055907cc3ca1
-
-#####第4章 解决面试题的思路
-页号| 题目 |简书链接
----|------|----
 159 | 28.对称的二叉树 | http://www.jianshu.com/p/7f1bce9c6928
 161 | 29.顺时针打印矩阵 | http://www.jianshu.com/p/1bf321eff014
 165 | 30.包含min函数的栈 | http://www.jianshu.com/p/c2f313eb26a5
@@ -179,10 +169,6 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 194 | 37.序列化二叉树 | http://www.jianshu.com/p/61ec6618f792
 197 | 38.字符串的排列 | http://www.jianshu.com/p/17e7d220e8d4
 199 | 38.2字符串的组合 | http://www.jianshu.com/p/a28b8feda61b
-
-#####第5章 有花时间和空间效率
-页号| 题目 |简书链接
----|------|----
 205 | 39.数组中出现次过一半的数字 | http://www.jianshu.com/p/aba14db8cbf2
 209 | 40.最小的k个数 | http://www.jianshu.com/p/2198f276ad2a
 214 | 41.数据流中的中位数 | http://www.jianshu.com/p/cca34b891266
@@ -198,10 +184,6 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 247 | 50.2.流中第一个出现一次的字符 | http://www.jianshu.com/p/dd9826ff5109
 249 | 51.数组中的逆序对 | http://www.jianshu.com/p/c7f98f5cc918
 253 | 52.两个链表的第一个公共节点 | http://www.jianshu.com/p/aef2e3862d59
-
-#####第6章 面试中的各项能力
-页号| 题目 |简书链接
----|------|----
 263 | 53.数字在排序数组中出现的次数 | http://www.jianshu.com/p/a5bda52fe134
 266 | 53.2.0~n-1中缺失的数字 | http://www.jianshu.com/p/626f921c2091
 269 | 54.二叉搜索树的第k大节点 | http://www.jianshu.com/p/fa35d13200d9
@@ -224,9 +206,5 @@ github地址：https://github.com/ryderchan/point-to-offer-edition2
 310 | 65.不用加减乘除做加法 | http://www.jianshu.com/p/e1e77b010ecc
 312 | 不用新变量交换两个原有变量的值| http://www.jianshu.com/p/0eb31b8b1bcf
 313 | 66.构建乘积数组 | http://www.jianshu.com/p/fa1e332f7d92
-
-#####第7章 两个面试案例
-页号| 题目 |简书链接
----|------|----
 318 | 67.把字符串转换成整数 | http://www.jianshu.com/p/31dc58b9eca9
 326 | 68.树中两个节点的最低公共祖先 | http://www.jianshu.com/p/edffe43abc14
