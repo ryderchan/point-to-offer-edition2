@@ -42,8 +42,7 @@ public class P205_MoreThanHalfNumber {
         return left;
     }
 
-    //根据数组特点进行记录、查找，时间复杂度o(n)
-    //此解法普适于问题：数组中出现次数最多的数字
+    //根据数组特点进行记录、查找，时间复杂度o(n)，思路有点缓存的意味。
     public static int moreThanHalfNum2(int[] data){
         if(data==null || data.length==0)
             return 0;
