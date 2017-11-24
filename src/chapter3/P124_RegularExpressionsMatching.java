@@ -15,9 +15,15 @@ public class P124_RegularExpressionsMatching {
         //如果匹配串和模式串都匹配结束
         if(strIndex==str.length() && patternIndex==pattern.length())
             return true;
-        //如果匹配串和模式串只有一个匹配结束
-        if(strIndex==str.length() || patternIndex==pattern.length())
+        //如果匹配串没结束，模式串结束了
+        if(strIndex!=str.length() && patternIndex==pattern.length())
             return false;
+        if(strIndex==str.length() && patternIndex!=pattern.length()) {
+            if(patternIndex+1<pattern.length()&&pattern.charAt(patternIndex+1)=='*')
+                return matchCore(str,strIndex,pattern,patternIndex+2);
+            else
+                return false;
+        }
         //如果模式串的第二个字符不是*或者已经只剩一个字符了
         if(patternIndex==pattern.length()-1|| pattern.charAt(patternIndex+1)!='*'){
             if(pattern.charAt(patternIndex)=='.' || pattern.charAt(patternIndex)==str.charAt(strIndex))
@@ -27,8 +33,10 @@ public class P124_RegularExpressionsMatching {
         }
         //如果模式串的第二个字符是*
         else{
-            if((pattern.charAt(patternIndex)=='.' || pattern.charAt(patternIndex)==str.charAt(strIndex))
-                return matchCore(str,strIndex+1,pattern,patternIndex) ||matchCore(str,strIndex+1,pattern,patternIndex+2);
+            if(pattern.charAt(patternIndex)=='.'||pattern.charAt(patternIndex)==str.charAt(strIndex))
+                return matchCore(str,strIndex+1,pattern,patternIndex)
+                        ||matchCore(str,strIndex+1,pattern,patternIndex+2)
+                        ||matchCore(str,strIndex,pattern,patternIndex+2);
             else
                 return matchCore(str,strIndex,pattern,patternIndex+2);
         }
