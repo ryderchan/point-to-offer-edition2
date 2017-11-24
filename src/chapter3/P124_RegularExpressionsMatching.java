@@ -27,7 +27,7 @@ public class P124_RegularExpressionsMatching {
         }
         //如果模式串的第二个字符是*
         else{
-            if(pattern.charAt(patternIndex)==str.charAt(strIndex))
+            if((pattern.charAt(patternIndex)=='.' || pattern.charAt(patternIndex)==str.charAt(strIndex))
                 return matchCore(str,strIndex+1,pattern,patternIndex) ||matchCore(str,strIndex+1,pattern,patternIndex+2);
             else
                 return matchCore(str,strIndex,pattern,patternIndex+2);
