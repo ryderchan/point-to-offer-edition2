@@ -33,8 +33,10 @@ public class P197_StringPermutation {
     public static void permutationCore(char[] strs, List<char[]> ret, int bound) {
         if (bound == strs.length)
             ret.add(Arrays.copyOf(strs, strs.length));
+        Set<Character> set = new HashSet<>();
         for (int i = bound; i < strs.length; i++) {
-            if (i == bound || strs[bound] != strs[i]) {
+            //当set中已经有strs[i]，add的时候会返回false
+            if (set.add(strs[i])) {
                 swap(strs, bound, i);
                 permutationCore(strs, ret, bound + 1);
                 swap(strs, bound, i);
