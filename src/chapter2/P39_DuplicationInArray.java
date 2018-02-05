@@ -84,8 +84,8 @@ public class P39_DuplicationInArray {
                     return data[i];
                 else{
                     int temp = data[i];
-                    data[i] = data[data[i]];
-                    data[data[i]] = temp;
+                    data[i] = data[temp];
+                    data[temp] = temp;
                 }
             }
         }
