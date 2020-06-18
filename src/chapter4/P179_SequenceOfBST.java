@@ -19,9 +19,8 @@ public class P179_SequenceOfBST {
             return true;
         int root = data[end];
         int rightStart =0;
-        for(int i=0;i<end;i++){
-            if(data[i]>root){
-                rightStart = i;
+        for(;rightStart<end;rightStart++){
+            if(data[rightStart]>root){
                 break;
             }
         }
